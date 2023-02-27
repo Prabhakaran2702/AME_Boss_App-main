@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AttendanceTableViewCell" rowHeight="864" id="4gN-Nv-wDW" customClass="AttendanceTableViewCell" customModule="AME_Boss_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="605" height="864"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4gN-Nv-wDW" id="48H-Uf-1eE">
+                <rect key="frame" x="0.0" y="0.0" width="605" height="864"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9J-FA-HCB">
+                        <rect key="frame" x="20" y="0.0" width="565" height="859"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLZ-qu-wAb">
+                                <rect key="frame" x="10" y="0.0" width="545" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAY TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6V8-Ro-w2V">
+                                        <rect key="frame" x="0.0" y="0.0" width="181.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        <color key="textColor" name="Gradient1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAY TYPE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpS-Nc-oJI">
+                                        <rect key="frame" x="181.5" y="0.0" width="182" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        <color key="textColor" name="Gradient1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAY AMOUNT" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seL-1Q-Cil">
+                                        <rect key="frame" x="363.5" y="0.0" width="181.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        <color key="textColor" name="Gradient1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="seL-1Q-Cil" secondAttribute="trailing" id="0Yq-jp-8jB"/>
+                                    <constraint firstAttribute="bottom" secondItem="6V8-Ro-w2V" secondAttribute="bottom" id="0tx-xg-WoD"/>
+                                    <constraint firstItem="seL-1Q-Cil" firstAttribute="leading" secondItem="YpS-Nc-oJI" secondAttribute="trailing" id="9sF-Tc-Ad4"/>
+                                    <constraint firstAttribute="height" constant="40" id="AGp-Ia-iar"/>
+                                    <constraint firstItem="seL-1Q-Cil" firstAttribute="top" secondItem="bLZ-qu-wAb" secondAttribute="top" id="GxK-yb-ABh"/>
+                                    <constraint firstItem="6V8-Ro-w2V" firstAttribute="top" secondItem="bLZ-qu-wAb" secondAttribute="top" id="NME-GK-clm"/>
+                                    <constraint firstAttribute="bottom" secondItem="YpS-Nc-oJI" secondAttribute="bottom" id="PZL-cl-FhH"/>
+                                    <constraint firstItem="YpS-Nc-oJI" firstAttribute="width" secondItem="6V8-Ro-w2V" secondAttribute="width" id="SQ7-Mf-Khj"/>
+                                    <constraint firstItem="6V8-Ro-w2V" firstAttribute="leading" secondItem="bLZ-qu-wAb" secondAttribute="leading" id="XBu-oi-N3z"/>
+                                    <constraint firstItem="seL-1Q-Cil" firstAttribute="width" secondItem="6V8-Ro-w2V" secondAttribute="width" id="i0l-qu-pfr"/>
+                                    <constraint firstItem="YpS-Nc-oJI" firstAttribute="top" secondItem="bLZ-qu-wAb" secondAttribute="top" id="ibm-If-qLE"/>
+                                    <constraint firstItem="YpS-Nc-oJI" firstAttribute="leading" secondItem="6V8-Ro-w2V" secondAttribute="trailing" id="mJh-hL-l0o"/>
+                                    <constraint firstAttribute="bottom" secondItem="seL-1Q-Cil" secondAttribute="bottom" id="mL4-w4-8nl"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6ux-qp-9WQ">
+                                <rect key="frame" x="10" y="40" width="545" height="819"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bLZ-qu-wAb" secondAttribute="trailing" constant="10" id="3Jp-Rz-LiC"/>
+                            <constraint firstItem="bLZ-qu-wAb" firstAttribute="top" secondItem="U9J-FA-HCB" secondAttribute="top" id="5Nb-D5-JFR"/>
+                            <constraint firstItem="6ux-qp-9WQ" firstAttribute="trailing" secondItem="bLZ-qu-wAb" secondAttribute="trailing" id="FAs-gs-Hqv"/>
+                            <constraint firstItem="6ux-qp-9WQ" firstAttribute="top" secondItem="bLZ-qu-wAb" secondAttribute="bottom" id="XiE-kU-WOL"/>
+                            <constraint firstItem="6ux-qp-9WQ" firstAttribute="leading" secondItem="bLZ-qu-wAb" secondAttribute="leading" id="cR6-0I-VWg"/>
+                            <constraint firstAttribute="bottom" secondItem="6ux-qp-9WQ" secondAttribute="bottom" id="g1X-Vd-fho"/>
+                            <constraint firstItem="bLZ-qu-wAb" firstAttribute="leading" secondItem="U9J-FA-HCB" secondAttribute="leading" constant="10" id="gHb-lK-zNg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="U9J-FA-HCB" secondAttribute="trailing" id="8EU-zV-0kz"/>
+                    <constraint firstAttribute="bottom" secondItem="U9J-FA-HCB" secondAttribute="bottom" constant="5" id="Jik-Xq-Jx4"/>
+                    <constraint firstItem="U9J-FA-HCB" firstAttribute="top" secondItem="48H-Uf-1eE" secondAttribute="top" id="MKu-of-TeQ"/>
+                    <constraint firstItem="U9J-FA-HCB" firstAttribute="leading" secondItem="48H-Uf-1eE" secondAttribute="leadingMargin" id="gjE-pG-XKI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="PNt-cf-AwR"/>
+            <connections>
+                <outlet property="deffTitleLabel" destination="6V8-Ro-w2V" id="1wh-EA-me5"/>
+                <outlet property="deffTitleLabel2" destination="YpS-Nc-oJI" id="abi-3y-tYQ"/>
+                <outlet property="deffTitleLabel3" destination="seL-1Q-Cil" id="9yA-hy-XPW"/>
+                <outlet property="tableView" destination="6ux-qp-9WQ" id="wss-Zs-gVW"/>
+                <outlet property="titleHeight" destination="AGp-Ia-iar" id="rGn-5V-Ntm"/>
+            </connections>
+            <point key="canvasLocation" x="344.20289855072468" y="32.8125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Gradient1">
+            <color red="0.15700000524520874" green="0.23499999940395355" blue="0.52499997615814209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
